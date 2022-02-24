@@ -1,0 +1,58 @@
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: FadeIn 2s ease-in-out forwards;
+}
+
+.top__left span {
+  font-size: 13px;
+  color: black;
+  padding: 6px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.top__right__time {
+  text-align: right;
+}
+
+.top__right__form {
+  display: inline;
+  margin-right: 10px;
+}
+
+.top__right__label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f1c40f;
+}
+
+.top__right__name {
+  width: 60px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f1c40f;
+  border-radius: 8px;
+  border: none;
+  padding: 4px 8px;
+}
+
+.top__right__name:focus {
+  width: 120px;
+  transition: all 0.5s ease-in-out;
+}
+
+.top__right__reset {
+  color: rgba(255, 255, 255, 0.5);
+}

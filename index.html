@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todoflix</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/common.css" />
+    <link rel="stylesheet" href="src/top.css" />
+    <link rel="stylesheet" href="src/task.css" />
+    <link rel="stylesheet" href="src/movie.css" />
+  </head>
+
+  <body>
+    <div class="top">
+      <div class="top__left">
+        <span class="top__left__city"></span>
+        <span class="top__left__temp"></span>
+        <span class="top__left__humidity"></span>
+      </div>
+      <div class="top__right">
+        <span class="top__right__label">이름을 등록해보세요! 👉</span>
+        <form class="top__right__form">
+          <input type="text" class="top__right__name" placeholder="_" />
+        </form>
+        <button class="top__right__reset hidden">초기화</button>
+        <span class="top__right__time"></span>
+      </div>
+    </div>
+    <div class="backdrop">
+      <img class="backdrop__image" />
+      <img class="backdrop__cover" />
+    </div>
+    <div class="container">
+      <h1 class="title">혹시, 이 영화 보셨나요?</h1>
+      <div class="baseline" />
+      <section class="movie">
+        <div class="movie__poster">
+          <img class="movie__poster__image" />
+        </div>
+        <div class="movie__detail">
+          <h1 class="movie__detail__title"></h1>
+          <h3 class="movie__detail__genres"></h3>
+          <h3 class="movie__detail__rating"></h3>
+          <p class="movie__detail__overview"></p>
+          <a class="movie__detail__button btn-addmovie" target="_blank">
+            ❤️ 오늘 볼 영화로 추가
+          </a>
+          <a class="movie__detail__button btn-reload" target="_blank">
+            <i class="fas fa-redo-alt"></i>다른 추천 영화보기
+          </a>
+          <a class="movie__detail__button btn-homepage" target="_blank">
+            🏠 홈페이지로 이동
+          </a>
+        </div>
+      </section>
+      <div class="vertical-space" />
+      <h1 class="title">오늘, 무엇을 할까요?</h1>
+      <div class="baseline" />
+      <section class="task">
+        <form class="task__form">
+          <input
+            class="task__input"
+            type="text"
+            placeholder="이 곳에 해야할 일을 적어보세요."
+          />
+        </form>
+        <div class="task__detail">
+          <div>
+            <h2>Pending</h2>
+            <ul class="task__pending__list pending"></ul>
+          </div>
+          <div>
+            <h2>Finished</h2>
+            <ul class="task__pending__list finished"></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="src/top.js"></script>
+    <script src="src/task.js"></script>
+    <script src="src/movie.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5993050df4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
